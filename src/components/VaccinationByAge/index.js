@@ -1,34 +1,36 @@
-import {PieChart, Pie, Legend, Cell, ResponsiveContainer} from 'recharts'
+import {PieChart, Pie, Legend, Cell} from 'recharts'
 
-const VaccinationByAgeCom = props => {
-  const {data} = props
+import './index.css'
+
+const VaccinationByAge = props => {
+  const {vaccinationByAgeDetails} = props
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <PieChart>
+    <div className="vaccination-by-age-container">
+      <h1 className="vaccination-by-age-heading">Vaccination by age</h1>
+      <PieChart width={1000} height={300}>
         <Pie
+          data={vaccinationByAgeDetails}
           cx="50%"
-          cy="50%"
-          data={data}
-          startAngle={360}
-          endAngle={0}
-          innerRadius="0%"
-          outerRadius="70%"
+          cy="30%"
+          outerRadius="60%"
           dataKey="count"
         >
           <Cell name="18-44" fill="#2d87bb" />
-          <Cell name="45-60" fill=" #a3df9f" />
-          <Cell name="Above 60" fill="#64c2a6" />
+          <Cell name="44-60" fill="#a3df9f" />
+          <Cell name="Above 60" fill="#64C2A6" />
         </Pie>
+
         <Legend
           iconType="circle"
           layout="horizontal"
           verticalAlign="bottom"
           align="center"
+          wrapperStyle={{fontSize: 12, fontFamily: 'Roboto'}}
         />
       </PieChart>
-    </ResponsiveContainer>
+    </div>
   )
 }
 
-export default VaccinationByAgeCom
+export default VaccinationByAge
