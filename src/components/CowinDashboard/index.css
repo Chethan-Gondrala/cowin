@@ -1,0 +1,58 @@
+.cdb-con {
+  min-height: 100vh;
+  background-color: #161625;
+  color: #cbd5e1;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.logo-head-con {
+  width: 90%;
+}
+.sub-can {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #1c1c2b;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding: 10px;
+}
+.vac-cov-head {
+  font-weight: 500;
+  font-size: 25px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-img {
+  width: 60px;
+  margin-right: 10px;
+}
+.co-win-text {
+  color: #2cc6c6;
+  font-size: 30px;
+}
+.cowin-head {
+  font-size: 35px;
+  font-weight: 500;
+}
+.failure-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.failure-img {
+  width: 500px;
+  margin-bottom: 10px;
+}
